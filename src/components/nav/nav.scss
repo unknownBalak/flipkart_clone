@@ -1,0 +1,131 @@
+.navBar {
+  width: 100%;
+  background-color: #2874f0;
+  //   padding-bottom: 56px;
+  min-width: 978px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav_left,
+  .nav_right {
+    min-width: 184px;
+    height: 100%;
+  }
+  .nav_body {
+    border: 2px solid red;
+    display: flex;
+    flex: 1;
+    align-items: center;
+    // justify-content: space-evenly;
+    justify-content: inherit;
+
+    padding: 10px;
+    height: 100%;
+    padding: 10px;
+  }
+  .mainLogo {
+    .logo1 {
+      height: 20px;
+      width: 75px;
+    }
+    .subLogo {
+      font-size: 11px;
+      font-style: italic;
+      margin-top: -1px;
+
+      .plus {
+        color: #ffe500;
+        font-weight: 500;
+        margin-right: 2px;
+      }
+      .logo2 {
+        width: 10px;
+      }
+    }
+  }
+}
+.nav_input {
+  width: 400px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  min-width: 304px;
+  width: calc(100% - 540px);
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  height: 100%;
+  min-width: 304px;
+  width: calc(100% - 540px);
+  margin: 0 100px 0 -30px;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  form {
+    width: 100%;
+  }
+
+  input {
+    padding: 0 16px;
+    border-radius: 2px 0 0 2px;
+    border: 0;
+    outline: 0 none;
+    font-size: 14px;
+    height: 36px;
+    width: 100%;
+  }
+}
+
+.login {
+  background-color: white;
+  position: relative;
+  a {
+    color: #2874f0;
+    font-weight: 500;
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 2px;
+    height: 32px;
+    padding: 5px 40px;
+    border: 1px solid #dbdbdb;
+    text-decoration: none;
+  }
+  .expandedBar {
+    position: absolute;
+    top: 27px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 11;
+    min-width: 240px;
+    background-color: #fff;
+    color: #212121;
+    font-size: 14px;
+    font-weight: 400;
+    border-color: #f0f0f0;
+    text-align: left;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .removeOpacity {
+    opacity: unset;
+    visibility: visible;
+  }
+}
+
+.more,
+.cart {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  height: 100%;
+  line-height: 20px;
+  font-size: 17px;
+  letter-spacing: 0.1px;
+  font-weight: 500;
+}

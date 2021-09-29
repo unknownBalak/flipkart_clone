@@ -1,0 +1,44 @@
+.dealsStyles {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 100%;
+  margin: 10px;
+
+  .dealDayItems {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    margin-right: 20px;
+    width: 85vw;
+    overflow: hidden;
+    border: 2px solid red;
+    position: relative;
+  }
+}
+
+.dealOfTheItems {
+  width: 80%;
+  max-width: 80%;
+  img {
+    height: 200px;
+    width: 150px;
+    padding: 10px;
+  }
+}
+.dealOfDay_MainContainer {
+  display: flex;
+}
+.coupons {
+  height: 354px;
+  margin-right: 10px;
+  padding: 5px;
+  box-shadow: 2px 4px 0 rgba(0, 0, 0, 0.08);
+  flex: 0 0 248px;
+  max-width: 248px;
+  padding: 0px 0px 10px 10px;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

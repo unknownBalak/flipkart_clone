@@ -1,0 +1,40 @@
+.dealItemContainer {
+  width: 80vw;
+  background-color: #fff;
+  margin: 0 10px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
+  border-top: 1px solid #eaeaea;
+
+ 
+}
+.img-card {
+  margin-top: 20px;
+  text-align: center;
+  padding: 5px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  img:hover {
+    transform: scale(1.1);
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  p {
+    padding: 0;
+    margin: 0;
+    line-height: 25px;
+  }
+}
+.deal_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h2 {
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    font-weight: 500;
+  }
+}
