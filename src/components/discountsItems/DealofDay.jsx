@@ -6,6 +6,7 @@ function DealofDay(props) {
     width: "150px",
     margin: "10px",
     height: "150px",
+    boxShadow: "0px 1px 9px grey",
   };
   const { index } = props;
   return (

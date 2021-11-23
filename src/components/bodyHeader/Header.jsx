@@ -7,8 +7,8 @@ function Header() {
     <div className="bodyHeader">
       <div className="itemsContainer">
         {headerItem.map((item, i) => (
-          <a href="#">
-            <Card itemName={item} key={i} />{" "}
+          <a href="abc.com" key={i}>
+            <Card itemName={item} />
           </a>
         ))}
       </div>

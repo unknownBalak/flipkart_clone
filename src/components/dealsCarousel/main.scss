@@ -4,8 +4,6 @@
   margin: 0 10px;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08);
   border-top: 1px solid #eaeaea;
-
- 
 }
 .img-card {
   margin-top: 20px;
@@ -37,4 +35,13 @@
     display: inline-block;
     font-weight: 500;
   }
+}
+
+.dealsContainer {
+  flex: 1;
+  margin: 20px;
+  box-shadow: 0px 1px 9px grey;
+}
+.slick-arrow {
+  display: none !important;
 }

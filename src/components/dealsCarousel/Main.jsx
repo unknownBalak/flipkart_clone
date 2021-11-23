@@ -7,32 +7,31 @@ import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 import "../carousel/styles.scss";
 import "./main.scss";
 import Title from "../titleComponent/Title.jsx";
-
+import { Link } from "react-router-dom";
 function Main({ style, itemArr, dealOfDayTimeIcon, index }) {
   let [show, setShow] = useState(true);
 
   const NextArrow = (props) => {
     const { onClick } = props;
     return (
-      <span
-        className="arrow"
-        onClick={onClick}
+      <ArrowForwardIosIcon
+        className="rightArr"
         style={{
           position: "absolute",
           top: "50%",
           zIndex: 1,
           right: 0,
         }}
-      >
-        <ArrowForwardIosIcon className="rightArr" style={{ right: 0 }} />
-      </span>
+        onClick={onClick}
+      />
     );
   };
   const PrevArrow = (props) => {
     const { onClick } = props;
 
     return (
-      <span
+      <ArrowBackIosIcon
+        className="backArr"
         onClick={onClick}
         style={{
           position: "absolute",
@@ -40,9 +39,7 @@ function Main({ style, itemArr, dealOfDayTimeIcon, index }) {
           zIndex: 1,
           boxShadow: "1px solid rgba(0, 0, 0, 0.1)",
         }}
-      >
-        <ArrowBackIosIcon className="backArr" />
-      </span>
+      />
     );
   };
   const config = {
@@ -62,16 +59,16 @@ function Main({ style, itemArr, dealOfDayTimeIcon, index }) {
     },
   };
   return (
-    <div className=" " style={{ width: index > 0 ? "80%" : "80%" }}>
+    <div className="dealsContainer" style={{ width: index > 0 ? "0%" : "80%" }}>
       <Title
         h2Title={"Deal of the Day"}
         dealOfDayTimeIcon={dealOfDayTimeIcon}
       />
-      <Slider {...config}>
+      <Slider {...config} style={{ padding: "10px 0" }}>
         {itemArr.map((item, key) => {
           return (
             <div key={key} className="img-card">
-              <a href="#">
+              <Link to="/cart">
                 <img src={item.img} alt={item.alt} style={{ ...style }} />
                 <p>
                   {item.description.name.length < 20
@@ -82,7 +79,7 @@ function Main({ style, itemArr, dealOfDayTimeIcon, index }) {
                   {" "}
                   Starting from {item.description.price}
                 </p>
-              </a>
+              </Link>
             </div>
           );
         })}
